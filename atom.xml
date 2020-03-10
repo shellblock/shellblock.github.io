@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shellblock.top</id>
     <title>Shellblock</title>
-    <updated>2020-03-09T11:14:50.125Z</updated>
+    <updated>2020-03-10T06:35:36.964Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shellblock.top"/>
     <link rel="self" href="https://shellblock.top/atom.xml"/>
@@ -11,17 +11,56 @@
     <icon>https://shellblock.top/favicon.ico</icon>
     <rights>All rights reserved 2020, Shellblock</rights>
     <entry>
-        <title type="html"><![CDATA[朋友 | Friend]]></title>
-        <id>https://shellblock.top/post/links/</id>
-        <link href="https://shellblock.top/post/links/">
+        <title type="html"><![CDATA[JavaScript -第二章 作业]]></title>
+        <id>https://shellblock.top/post/js-01/</id>
+        <link href="https://shellblock.top/post/js-01/">
         </link>
-        <updated>2020-03-09T10:49:18.000Z</updated>
-        <content type="html"><![CDATA[<p><a class="animated fadeInUp" href="http://www.saky.fun/"><img src="https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/hua-logo.png" alt="さくら荘後の花園"></a><br>
-<a class="animated fadeInUp" href="https://shellblock.gitee.io/ShellToken/"><img src="https://shellblock.gitee.io/ShellToken/images/link16.png" alt="shelltoken"></a><br>
-<a class="animated fadeInUp" href="https://shellblock.top/"><img src="https://shellblock.gitee.io/ShellToken/images/link17.png" alt="shellblock"></a><br>
-<a class="animated fadeInUp" href="https://shellblock.gitee.io/search.html"><img src="https://shellblock.gitee.io/ShellToken/images/link4.png" alt="shellsearch"></a><br>
-<a class="animated fadeInUp" href="http://suo.im/5OO8gL"><img src="http://101.133.164.74/wp-content/uploads/2020/02/logo0003.png" alt="shellblog"></a><br>
-<a class="animated fadeInUp" href="https://shellcloud.utools.club"><img src="https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/shellcloud.png" alt="shellcloud"></a></p>
+        <updated>2020-03-10T06:28:46.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1请编写程序求出1~100之间的素数">1.请编写程序求出1~100之间的素数。</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+		var flag=0;
+		for(var j=1;j&lt;101;j++){
+			for(var i=2;i&lt;j;i++){
+				if(j%i==0){
+					flag=1;
+					break;
+				}else{
+					flag=0;
+				}
+			}
+			if(flag==0&amp;&amp;j!=1){
+				console.log(j);
+			}
+		}
+	&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="2有红-白-黑三种球若干个其中红-白球共25个白-黑球共31个红-黑球共28个求这三种球各有多少个">2.有红、白、黑三种球若干个，其中红、白球共25个，白、黑球共31个，红、黑球共28个，求这三种球各有多少个？</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown编写教程（基本语法）]]></title>
+        <id>https://shellblock.top/post/markdown/</id>
+        <link href="https://shellblock.top/post/markdown/">
+        </link>
+        <updated>2020-03-10T06:08:23.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="前言">前言</h2>
+<p>鉴于最近新建了静态博客，需要使用Markdown进行编写,语法又跟以往的不太一样，使用记下来，备忘。</p>
+<h2 id="简介">简介</h2>
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”。</p>
+<h2 id="基本语法">基本语法</h2>
+<p>由于本文就是用md编写的，所以无法写😂。。。写完才想起来😅<br>
+so...可以点击下方在线编辑器，可以对照查看。</p>
+<h2 id="在线编辑器">在线编辑器</h2>
+<p><a href="https://www.mdeditor.cn">Editor.md</a></p>
 ]]></content>
     </entry>
     <entry>

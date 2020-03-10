@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Shellblock</title>
+<title>JavaScript -第二章 作业 | Shellblock</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,25 @@
 <link rel="stylesheet" href="https://shellblock.top/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="1.请编写程序求出1~100之间的素数。
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;tit..." />
+    <meta name="keywords" content="学习" />
   </head>
   <body>
     <div id="app" class="main">
@@ -108,14 +120,74 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">JavaScript -第二章 作业</h2>
+            <div class="post-date">2020-03-10</div>
             
-              <a class="tag" href="https://shellblock.top/tag/learn/">学习</a>
+              <div class="feature-container" style="background-image: url('https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/miku/02.jpg')">
+              </div>
             
-              <a class="tag" href="https://shellblock.top/tag/nfFjiUiuc/">Gridea</a>
+            <div class="post-content" v-pre>
+              <h3 id="1请编写程序求出1~100之间的素数">1.请编写程序求出1~100之间的素数。</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+		var flag=0;
+		for(var j=1;j&lt;101;j++){
+			for(var i=2;i&lt;j;i++){
+				if(j%i==0){
+					flag=1;
+					break;
+				}else{
+					flag=0;
+				}
+			}
+			if(flag==0&amp;&amp;j!=1){
+				console.log(j);
+			}
+		}
+	&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="2有红-白-黑三种球若干个其中红-白球共25个白-黑球共31个红-黑球共28个求这三种球各有多少个">2.有红、白、黑三种球若干个，其中红、白球共25个，白、黑球共31个，红、黑球共28个，求这三种球各有多少个？</h3>
+
+            </div>
             
+              <div class="tag-container">
+                
+                  <a href="https://shellblock.top/tag/learn/" class="tag">
+                    学习
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://shellblock.top/post/markdown/">
+                  <h3 class="post-title">
+                    Markdown编写教程（基本语法）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -140,6 +212,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '5c687610957a73d2027c',
+        clientSecret: 'def3249b0bd51fcd4af9252a0ea7f008f78f3f58',
+        repo: 'shellblock.github.io',
+        owner: 'shellblock',
+        admin: ['shellblock'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
